@@ -1,0 +1,16 @@
+PODS:
+  - LMExpandableCircularAnimation (0.1.0)
+
+DEPENDENCIES:
+  - LMExpandableCircularAnimation (from `../`)
+
+EXTERNAL SOURCES:
+  LMExpandableCircularAnimation:
+    :path: ../
+
+SPEC CHECKSUMS:
+  LMExpandableCircularAnimation: 1f5637247eaf8734d9b0fe8ea16bdb80565cec49
+
+PODFILE CHECKSUM: e64e54920a3985eaca1042e1a6540136d854748e
+
+COCOAPODS: 1.2.0
