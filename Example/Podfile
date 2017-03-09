@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'LMExpandableCircularAnimation_Example' do
+  pod 'LMExpandableCircularAnimation', :path => '../'
+
+  target 'LMExpandableCircularAnimation_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
