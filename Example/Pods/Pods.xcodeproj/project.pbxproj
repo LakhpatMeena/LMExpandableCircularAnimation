@@ -7,15 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		46872DF5796A79923350733EFFF4CBF5 /* LMExpandableCircularAnimation-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BBFC6CFDB859E7EAE7DDF691F9C1DA0 /* LMExpandableCircularAnimation-dummy.m */; };
+		5D7A52C687B4028437551DDCF4004B8A /* LMExpandableCircularAnimation-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A2F67AE5F69FBF673D0ACC597F93FFD /* LMExpandableCircularAnimation-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		97F6E10B11F3A084CB4B6109C9C058DD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
 		9CA482CCFC40C0B8BD62D18BF315279B /* Pods-LMExpandableCircularAnimation_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 52E2FEBE9C8DCA3EC40CC5D7A208BD8B /* Pods-LMExpandableCircularAnimation_Tests-dummy.m */; };
-		A632A31F3C5C2A0B7D3108682AF1B85E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		AEB5AF8CE132D95BAA65D6D47BB5557A /* LMCircularLoaderAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C07D7DB516DF47544EA1AB5C5B9E2AB /* LMCircularLoaderAnimationView.m */; };
 		C23E79C722CF3F06C42DD61829EBD877 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
-		D1A72B6D221CBECADBB0C5B6562CC72C /* LMExpandableCircularAnimation-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BBFC6CFDB859E7EAE7DDF691F9C1DA0 /* LMExpandableCircularAnimation-dummy.m */; };
-		D6552BE1289EA2C6773FF90B63A8C96A /* ReplaceMe.m in Sources */ = {isa = PBXBuildFile; fileRef = 02AC2E2E66EEEE7CE3DDFE01E3544569 /* ReplaceMe.m */; };
-		E75B68F3C279F84E629BD8F2870B6944 /* LMExpandableCircularAnimation-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A2F67AE5F69FBF673D0ACC597F93FFD /* LMExpandableCircularAnimation-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D321FF2A8CCAA11B9C9044B54AB1E1C8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
 		F14E9B7F82B18481C5C35CF680A97EE0 /* Pods-LMExpandableCircularAnimation_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CCB232D069137263A829533CE3681DD /* Pods-LMExpandableCircularAnimation_Example-dummy.m */; };
 		F1F4AC414AA30901CF4C5C432AE69AF8 /* Pods-LMExpandableCircularAnimation_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B02EA7ADD95512E0BD11430CF7736B20 /* Pods-LMExpandableCircularAnimation_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F8C8E2A9483C74256896369DB9E0770E /* LMCircularLoaderAnimationView.h in Headers */ = {isa = PBXBuildFile; fileRef = 062A288469BE5E575E3CDD7DF6FBB41F /* LMCircularLoaderAnimationView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FE46529689939547F4C3670FE03129AD /* Pods-LMExpandableCircularAnimation_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AEC800AEEFF938D4507D3DA30305AC77 /* Pods-LMExpandableCircularAnimation_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
@@ -24,13 +25,13 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 73437170ADD73B0CC133CC0271CE0690;
+			remoteGlobalIDString = FB6B9271C0E04DC0D366964CCACFBA99;
 			remoteInfo = LMExpandableCircularAnimation;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		02AC2E2E66EEEE7CE3DDFE01E3544569 /* ReplaceMe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ReplaceMe.m; sourceTree = "<group>"; };
+		062A288469BE5E575E3CDD7DF6FBB41F /* LMCircularLoaderAnimationView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LMCircularLoaderAnimationView.h; sourceTree = "<group>"; };
 		0E0A9373531AF36AAE7B31285E6E8BE7 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0E1B597C6C834F4007C658319951A6C6 /* Pods-LMExpandableCircularAnimation_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-LMExpandableCircularAnimation_Example.modulemap"; sourceTree = "<group>"; };
 		13B904849D63FCBE6C26FC6D46A9A3AE /* Pods-LMExpandableCircularAnimation_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LMExpandableCircularAnimation_Example-frameworks.sh"; sourceTree = "<group>"; };
@@ -50,6 +51,7 @@
 		60238622F67873A968F611D083D69B75 /* Pods-LMExpandableCircularAnimation_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LMExpandableCircularAnimation_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		85DFF223698DB23FE36F63BBDA35D8A2 /* LMExpandableCircularAnimation-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LMExpandableCircularAnimation-prefix.pch"; sourceTree = "<group>"; };
 		8BBFC6CFDB859E7EAE7DDF691F9C1DA0 /* LMExpandableCircularAnimation-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LMExpandableCircularAnimation-dummy.m"; sourceTree = "<group>"; };
+		8C07D7DB516DF47544EA1AB5C5B9E2AB /* LMCircularLoaderAnimationView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LMCircularLoaderAnimationView.m; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A5729BF4B6BAE4EABA455D64ED08A85B /* Pods_LMExpandableCircularAnimation_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_LMExpandableCircularAnimation_Example.framework; path = "Pods-LMExpandableCircularAnimation_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEC800AEEFF938D4507D3DA30305AC77 /* Pods-LMExpandableCircularAnimation_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LMExpandableCircularAnimation_Tests-umbrella.h"; sourceTree = "<group>"; };
@@ -81,26 +83,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		92E9BFDE019324172C00CA19BCE992F7 /* Frameworks */ = {
+		75530F1604A0F0A3EF9A27CADF712407 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A632A31F3C5C2A0B7D3108682AF1B85E /* Foundation.framework in Frameworks */,
+				D321FF2A8CCAA11B9C9044B54AB1E1C8 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		077A147BB9F0D1A24F161B2962724015 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				02AC2E2E66EEEE7CE3DDFE01E3544569 /* ReplaceMe.m */,
-			);
-			name = Classes;
-			path = Classes;
-			sourceTree = "<group>";
-		};
 		41F87240C6552FF1B4DDB755C0FF1F2C /* Pods-LMExpandableCircularAnimation_Tests */ = {
 			isa = PBXGroup;
 			children = (
@@ -119,6 +112,16 @@
 			path = "Target Support Files/Pods-LMExpandableCircularAnimation_Tests";
 			sourceTree = "<group>";
 		};
+		42D864757C7D8F8FB3E606FD33EE632A /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				062A288469BE5E575E3CDD7DF6FBB41F /* LMCircularLoaderAnimationView.h */,
+				8C07D7DB516DF47544EA1AB5C5B9E2AB /* LMCircularLoaderAnimationView.m */,
+			);
+			name = Classes;
+			path = Classes;
+			sourceTree = "<group>";
+		};
 		43102CE3E263AAB9C2FBD992CFF35FBE /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -129,10 +132,10 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		57C723A78AA8CA4810F3A6D998693FD7 /* LMExpandableCircularAnimation */ = {
+		6CD27B7BC1F49CB47AF963DC6B3E922A /* LMExpandableCircularAnimation */ = {
 			isa = PBXGroup;
 			children = (
-				077A147BB9F0D1A24F161B2962724015 /* Classes */,
+				42D864757C7D8F8FB3E606FD33EE632A /* Classes */,
 			);
 			name = LMExpandableCircularAnimation;
 			path = LMExpandableCircularAnimation;
@@ -168,7 +171,7 @@
 		B07EA52C97F547919FFCE43B6582707A /* LMExpandableCircularAnimation */ = {
 			isa = PBXGroup;
 			children = (
-				57C723A78AA8CA4810F3A6D998693FD7 /* LMExpandableCircularAnimation */,
+				6CD27B7BC1F49CB47AF963DC6B3E922A /* LMExpandableCircularAnimation */,
 				B4ABA90393FDD5F32E5D8D378B10F1D3 /* Support Files */,
 			);
 			name = LMExpandableCircularAnimation;
@@ -227,14 +230,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		3EE4B48371E950954AF8B5D35D06B344 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E75B68F3C279F84E629BD8F2870B6944 /* LMExpandableCircularAnimation-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		75D584DBF1840C54DA00A36FDB756D97 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -248,6 +243,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				FE46529689939547F4C3670FE03129AD /* Pods-LMExpandableCircularAnimation_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF1C83DCDD9C4857CDDA6B5D282724C6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8C8E2A9483C74256896369DB9E0770E /* LMCircularLoaderAnimationView.h in Headers */,
+				5D7A52C687B4028437551DDCF4004B8A /* LMExpandableCircularAnimation-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,13 +293,13 @@
 			productReference = A5729BF4B6BAE4EABA455D64ED08A85B /* Pods_LMExpandableCircularAnimation_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		73437170ADD73B0CC133CC0271CE0690 /* LMExpandableCircularAnimation */ = {
+		FB6B9271C0E04DC0D366964CCACFBA99 /* LMExpandableCircularAnimation */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 90D08E324D22C6F6C31AA3760A07D58E /* Build configuration list for PBXNativeTarget "LMExpandableCircularAnimation" */;
+			buildConfigurationList = FAF937435760199B8C2793FA44C74C1E /* Build configuration list for PBXNativeTarget "LMExpandableCircularAnimation" */;
 			buildPhases = (
-				95846F3D81ECBC5136DE14138AF8C06A /* Sources */,
-				92E9BFDE019324172C00CA19BCE992F7 /* Frameworks */,
-				3EE4B48371E950954AF8B5D35D06B344 /* Headers */,
+				6347F3E8315E57DCE2011216DEB531F5 /* Sources */,
+				75530F1604A0F0A3EF9A27CADF712407 /* Frameworks */,
+				EF1C83DCDD9C4857CDDA6B5D282724C6 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -327,7 +331,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				73437170ADD73B0CC133CC0271CE0690 /* LMExpandableCircularAnimation */,
+				FB6B9271C0E04DC0D366964CCACFBA99 /* LMExpandableCircularAnimation */,
 				4673CF238D5D8E99049AB8CAEFB77522 /* Pods-LMExpandableCircularAnimation_Example */,
 				11DAFD165CB2ABDB570DC7B8D0AC5568 /* Pods-LMExpandableCircularAnimation_Tests */,
 			);
@@ -343,12 +347,12 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		95846F3D81ECBC5136DE14138AF8C06A /* Sources */ = {
+		6347F3E8315E57DCE2011216DEB531F5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D1A72B6D221CBECADBB0C5B6562CC72C /* LMExpandableCircularAnimation-dummy.m in Sources */,
-				D6552BE1289EA2C6773FF90B63A8C96A /* ReplaceMe.m in Sources */,
+				AEB5AF8CE132D95BAA65D6D47BB5557A /* LMCircularLoaderAnimationView.m in Sources */,
+				46872DF5796A79923350733EFFF4CBF5 /* LMExpandableCircularAnimation-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -366,7 +370,7 @@
 		E67642C08823002E9175053E4ED10B08 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = LMExpandableCircularAnimation;
-			target = 73437170ADD73B0CC133CC0271CE0690 /* LMExpandableCircularAnimation */;
+			target = FB6B9271C0E04DC0D366964CCACFBA99 /* LMExpandableCircularAnimation */;
 			targetProxy = ACE1365BD7B6195679B6AC78C447B96D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -399,6 +403,37 @@
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = Pods_LMExpandableCircularAnimation_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		1E4F89FBAE2F862B6D8173B30064AB24 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D25662032B19C31521162359A8F59C51 /* LMExpandableCircularAnimation.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/LMExpandableCircularAnimation/LMExpandableCircularAnimation-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LMExpandableCircularAnimation/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/LMExpandableCircularAnimation/LMExpandableCircularAnimation.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = LMExpandableCircularAnimation;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -442,6 +477,37 @@
 			};
 			name = Debug;
 		};
+		605F509DC63EB8686003DA463C220915 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D25662032B19C31521162359A8F59C51 /* LMExpandableCircularAnimation.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/LMExpandableCircularAnimation/LMExpandableCircularAnimation-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LMExpandableCircularAnimation/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/LMExpandableCircularAnimation/LMExpandableCircularAnimation.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = LMExpandableCircularAnimation;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		8DED8AD26D381A6ACFF202E5217EC498 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -481,37 +547,6 @@
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
-		};
-		8E6BF19144B9CA348937E5F0B4FD83C6 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D25662032B19C31521162359A8F59C51 /* LMExpandableCircularAnimation.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/LMExpandableCircularAnimation/LMExpandableCircularAnimation-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/LMExpandableCircularAnimation/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/LMExpandableCircularAnimation/LMExpandableCircularAnimation.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = LMExpandableCircularAnimation;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
 		};
 		9E1E4E48AF2EAB23169E611BF694090A /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -556,37 +591,6 @@
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
-		};
-		B803B7C9D4A3C75D5E47858B373DEAA0 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D25662032B19C31521162359A8F59C51 /* LMExpandableCircularAnimation.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/LMExpandableCircularAnimation/LMExpandableCircularAnimation-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/LMExpandableCircularAnimation/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/LMExpandableCircularAnimation/LMExpandableCircularAnimation.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = LMExpandableCircularAnimation;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
 		};
 		DD5BACA849D2F8EB3D79D1F3A72711A3 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -679,20 +683,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		90D08E324D22C6F6C31AA3760A07D58E /* Build configuration list for PBXNativeTarget "LMExpandableCircularAnimation" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				8E6BF19144B9CA348937E5F0B4FD83C6 /* Debug */,
-				B803B7C9D4A3C75D5E47858B373DEAA0 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		E5CEE51FFF6D78068FBF70DB5E854BCB /* Build configuration list for PBXNativeTarget "Pods-LMExpandableCircularAnimation_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0E1CD0B5300F57721E9401C6B4009A1B /* Debug */,
 				E0423004C20CF346FB457D613BB06B37 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAF937435760199B8C2793FA44C74C1E /* Build configuration list for PBXNativeTarget "LMExpandableCircularAnimation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1E4F89FBAE2F862B6D8173B30064AB24 /* Debug */,
+				605F509DC63EB8686003DA463C220915 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

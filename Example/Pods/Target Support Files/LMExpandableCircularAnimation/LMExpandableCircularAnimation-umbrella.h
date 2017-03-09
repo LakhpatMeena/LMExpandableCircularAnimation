@@ -10,6 +10,7 @@
 #endif
 #endif
 
+#import "LMCircularLoaderAnimationView.h"
 
 FOUNDATION_EXPORT double LMExpandableCircularAnimationVersionNumber;
 FOUNDATION_EXPORT const unsigned char LMExpandableCircularAnimationVersionString[];
