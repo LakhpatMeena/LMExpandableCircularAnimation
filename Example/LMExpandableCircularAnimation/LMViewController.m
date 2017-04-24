@@ -40,7 +40,7 @@
 {
     if (!_circularLoaderAnimationView)
     {
-        _circularLoaderAnimationView = [[LMCircularLoaderAnimationView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)];
+        _circularLoaderAnimationView = [[LMCircularLoaderAnimationView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height) initialColor:[UIColor cyanColor] endColor:[UIColor clearColor] initialRadius:5 endRadius:70 initialLineWidth:2 endLineWidth:5 andAnimationDuration:1.6f];
         _circularLoaderAnimationView.backgroundColor = [UIColor clearColor];
         [self.view addSubview:_circularLoaderAnimationView];
     }

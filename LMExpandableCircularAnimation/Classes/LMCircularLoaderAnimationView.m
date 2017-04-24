@@ -14,7 +14,7 @@
     CAShapeLayer *_circleShape1, *_circleShape2;
     BOOL _circleShape1Animating, _circleShape2Animating;
     NSTimer *_loaderTimer;
-    CABasicAnimation *_pathAnimation, *_strokeColorAnimation;
+    CABasicAnimation *_pathAnimation, *_strokeColorAnimation, *_lineWidthAnimation;
     CAAnimationGroup *_animationsGroup;
     UIImageView *_towerImageView;
     
@@ -24,17 +24,27 @@
 
 @implementation LMCircularLoaderAnimationView
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
+- (instancetype)initWithFrame:(CGRect)frame initialColor:(UIColor *)initialColor endColor:(UIColor *)endColor initialRadius:(CGFloat)initialRadius endRadius:(CGFloat)endRadius initialLineWidth:(CGFloat)initialWidth endLineWidth:(CGFloat)endWidth andAnimationDuration:(CFTimeInterval)animationDuration
+{
+    self = [super initWithFrame:frame];
+    
+    if (self)
+    {
+        _initialColor = initialColor;
+        _endColor = endColor;
+        _initialRadius = initialRadius;
+        _endRadius = endRadius;
+        _initialLineWidth = initialWidth;
+        _endLineWidth = endWidth;
+        _animationDuration = animationDuration;
+    }
+    
+    return self;
 }
-*/
 
 - (void)startAnimation
 {
-    [self createLoaderTowerImageView];
+    //[self createLoaderTowerImageView];
     [self initializeLoaderAnimationItems];
     [self startLoaderAnimationTimer];
 }
@@ -49,18 +59,26 @@
     center.x = bounds.origin.x + bounds.size.width / 2.0;
     center.y = bounds.origin.y + bounds.size.height / 2.0;
     
-    CGFloat radius = (MIN(bounds.size.width, bounds.size.height)/2.0) - 5.0;
+    if (!_endRadius)
+    {
+        _endRadius = (MIN(bounds.size.width, bounds.size.height)/2.0) - 5.0;
+    }
+    
+    if (!_initialRadius)
+    {
+        _initialRadius = _endRadius / 5;
+    }
     
     // (lp) Initial path
     if (!_startShape)
     {
-        _startShape = [UIBezierPath bezierPathWithArcCenter:center radius:50 startAngle:0 endAngle:M_PI * 2 clockwise:YES];
+        _startShape = [UIBezierPath bezierPathWithArcCenter:center radius:_initialRadius startAngle:0 endAngle:M_PI * 2 clockwise:YES];
     }
     
     // (lp) Final path
     if (!_endShape)
     {
-        _endShape = [UIBezierPath bezierPathWithArcCenter:center radius:radius startAngle:0 endAngle:M_PI * 2 clockwise:YES];
+        _endShape = [UIBezierPath bezierPathWithArcCenter:center radius:_endRadius startAngle:0 endAngle:M_PI * 2 clockwise:YES];
     }
     
     // (lp) Path animation
@@ -75,19 +93,52 @@
     // (lp) Stroke color animation
     if (!_strokeColorAnimation)
     {
+        if (!_initialColor)
+        {
+            _initialColor = [UIColor cyanColor];
+        }
+        if (!_endColor)
+        {
+            _endColor = _initialColor;
+        }
+        
         _strokeColorAnimation = [CABasicAnimation animationWithKeyPath:@"strokeColor"];
-        _strokeColorAnimation.toValue = (id)[UIColor clearColor].CGColor;
-        _strokeColorAnimation.fromValue = (id)[UIColor colorWithRed:25/255.0 green:78/255.0 blue:123/255.0 alpha:1.0f].CGColor;
+        _strokeColorAnimation.toValue = (id)_endColor.CGColor;
+        _strokeColorAnimation.fromValue = (id)_initialColor.CGColor;
         _strokeColorAnimation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseOut];
+    }
+    
+    
+    // (lp) Line width animation
+    if (!_lineWidthAnimation)
+    {
+        if (!_initialLineWidth)
+        {
+            _initialLineWidth = 15;
+        }
+        if (!_endLineWidth)
+        {
+            _endLineWidth = 12;
+        }
+        
+        _lineWidthAnimation = [CABasicAnimation animationWithKeyPath:@"lineWidth"];
+        _lineWidthAnimation.toValue = (id)[NSNumber numberWithFloat:_endLineWidth];
+        _lineWidthAnimation.fromValue = (id)[NSNumber numberWithFloat:_initialLineWidth];
+        _lineWidthAnimation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseOut];
     }
     
     // (lp) Animation group
     if (!_animationsGroup)
     {
+        if (!_animationDuration)
+        {
+            _animationDuration = 1.55f;
+        }
+        
         _animationsGroup = [CAAnimationGroup animation];
-        _animationsGroup.animations = [NSArray arrayWithObjects:_pathAnimation, _strokeColorAnimation, nil];
+        _animationsGroup.animations = [NSArray arrayWithObjects:_pathAnimation, _strokeColorAnimation, _lineWidthAnimation, nil];
         _animationsGroup.removedOnCompletion = NO;
-        _animationsGroup.duration = 1.55f;
+        _animationsGroup.duration = _animationDuration;
         _animationsGroup.fillMode  = kCAFillModeForwards;
     }
     
@@ -97,7 +148,6 @@
     {
         _circleShape1 = [CAShapeLayer layer];
         _circleShape1.fillColor = nil;
-        _circleShape1.lineWidth = 18;
         _circleShape1.bounds = bounds;
         _circleShape1.position = center;
         
@@ -109,7 +159,6 @@
     {
         _circleShape2 = [CAShapeLayer layer];
         _circleShape2.fillColor = nil;
-        _circleShape2.lineWidth = 18;
         _circleShape2.bounds = bounds;
         _circleShape2.position = center;
         
